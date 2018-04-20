@@ -14,8 +14,6 @@
 		72CFE7542088075600D33459 /* DiceNDie.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 72CFE7522088075600D33459 /* DiceNDie.xcdatamodeld */; };
 		72CFE7562088075600D33459 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72CFE7552088075600D33459 /* Assets.xcassets */; };
 		72CFE7592088075600D33459 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72CFE7572088075600D33459 /* LaunchScreen.storyboard */; };
-		72CFE7642088075600D33459 /* DiceNDieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CFE7632088075600D33459 /* DiceNDieTests.swift */; };
-		72CFE76F2088075600D33459 /* DiceNDieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CFE76E2088075600D33459 /* DiceNDieUITests.swift */; };
 		72CFE77E208807CB00D33459 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CFE77C208807CB00D33459 /* Cell.swift */; };
 		72CFE77F208807CB00D33459 /* Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72CFE77D208807CB00D33459 /* Cell.xib */; };
 		72CFE7842088176200D33459 /* Die.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CFE7832088176200D33459 /* Die.swift */; };
@@ -50,11 +48,7 @@
 		72CFE7582088075600D33459 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		72CFE75A2088075600D33459 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72CFE75F2088075600D33459 /* DiceNDieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiceNDieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		72CFE7632088075600D33459 /* DiceNDieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceNDieTests.swift; sourceTree = "<group>"; };
-		72CFE7652088075600D33459 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72CFE76A2088075600D33459 /* DiceNDieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiceNDieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		72CFE76E2088075600D33459 /* DiceNDieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceNDieUITests.swift; sourceTree = "<group>"; };
-		72CFE7702088075600D33459 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72CFE77C208807CB00D33459 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		72CFE77D208807CB00D33459 /* Cell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Cell.xib; sourceTree = "<group>"; };
 		72CFE7832088176200D33459 /* Die.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Die.swift; sourceTree = "<group>"; };
@@ -90,8 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				72CFE74A2088075600D33459 /* DiceNDie */,
-				72CFE7622088075600D33459 /* DiceNDieTests */,
-				72CFE76D2088075600D33459 /* DiceNDieUITests */,
 				72CFE7492088075600D33459 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -110,8 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				72CFE782208816C800D33459 /* Model */,
-				72CFE74B2088075600D33459 /* AppDelegate.swift */,
 				256E41E3208970270020B287 /* CreationViewController.swift */,
+				72CFE74B2088075600D33459 /* AppDelegate.swift */,
 				72CFE74D2088075600D33459 /* ViewController.swift */,
 				72CFE74F2088075600D33459 /* Main.storyboard */,
 				72CFE7552088075600D33459 /* Assets.xcassets */,
@@ -122,24 +114,6 @@
 				72CFE77D208807CB00D33459 /* Cell.xib */,
 			);
 			path = DiceNDie;
-			sourceTree = "<group>";
-		};
-		72CFE7622088075600D33459 /* DiceNDieTests */ = {
-			isa = PBXGroup;
-			children = (
-				72CFE7632088075600D33459 /* DiceNDieTests.swift */,
-				72CFE7652088075600D33459 /* Info.plist */,
-			);
-			path = DiceNDieTests;
-			sourceTree = "<group>";
-		};
-		72CFE76D2088075600D33459 /* DiceNDieUITests */ = {
-			isa = PBXGroup;
-			children = (
-				72CFE76E2088075600D33459 /* DiceNDieUITests.swift */,
-				72CFE7702088075600D33459 /* Info.plist */,
-			);
-			path = DiceNDieUITests;
 			sourceTree = "<group>";
 		};
 		72CFE782208816C800D33459 /* Model */ = {
@@ -300,7 +274,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72CFE7642088075600D33459 /* DiceNDieTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,7 +281,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72CFE76F2088075600D33459 /* DiceNDieUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +432,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DiceNDie/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bcit.ca.DiceNDie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -474,6 +447,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DiceNDie/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bcit.ca.DiceNDie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -487,11 +461,15 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N6RP3H788Z;
 				INFOPLIST_FILE = DiceNDieTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bcit.ca.DiceNDieTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DiceNDie.app/DiceNDie";
@@ -503,11 +481,15 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N6RP3H788Z;
 				INFOPLIST_FILE = DiceNDieTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bcit.ca.DiceNDieTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DiceNDie.app/DiceNDie";
@@ -520,6 +502,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DiceNDieUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bcit.ca.DiceNDieUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -535,6 +518,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DiceNDieUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bcit.ca.DiceNDieUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

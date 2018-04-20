@@ -61,7 +61,7 @@ class CreationViewController: UIViewController, UITextFieldDelegate {
         
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let context = appDelegate.persistentContainer.viewContext
-        let mod = Int(txtMod.text!)
+        let mod = Int(txtMod.text!)!
         var dices = [
             "d4" : txtD4.text,
             "d6" : txtD6.text,
@@ -71,13 +71,13 @@ class CreationViewController: UIViewController, UITextFieldDelegate {
             "d20"  : txtD20.text
         ]
         
-        var desc = "\(dices["d4"]!! != "0" ? dices["d4"]!!+"d4": "")"
+        var desc = "\(dices["d4"]!! != "0" ? dices["d4"]!!+"d4 ": "")"
         desc += "\(dices["d6"]!! != "0" ? dices["d6"]!!+"d6 ": "")"
         desc += "\(dices["d8"]!! != "0" ? dices["d8"]!!+"d8 ": "")"
         desc += "\(dices["d10"]!! != "0" ? dices["d10"]!!+"d10 ": "")"
         desc += "\(dices["d12"]!! != "0" ? dices["d12"]!!+"d12 ": "")"
         desc += "\(dices["d20"]!! != "0" ? dices["d20"]!!+"d20 ": "")"
-        desc += "\(mod != 0 ? String(describing: mod) : "")"
+        desc += "+\(mod != 0 ? String(mod) : "")"
         
         let entity = NSEntityDescription.entity(forEntityName: "Rolls", in: context)
         let newRoll = NSManagedObject(entity: entity!, insertInto: context)

@@ -12,13 +12,13 @@ class Roll {
     var name : String
     var dice : [Die] = []
     var mod : Int
-    var log : [Int] = []
     var desc : String
-    
+    var total : Int
     init(name: String, mod: Int, desc: String) {
         self.name = name
         self.mod = mod
         self.desc = desc
+        self.total = 0
     }
     
     func addDice(die : Die) {
@@ -29,5 +29,19 @@ class Roll {
         for die in dice {
             die.roll()
         }
+    }
+    
+    func getRolls() -> String {
+        var description = ""
+        total = 0
+        rollAll()
+        for die in dice {
+            let diceRoll = die.value
+            total += diceRoll
+            description += "\(diceRoll) \(die !== dice.last ? "+ " : "")"
+        }
+        total += mod
+        description += mod != 0 ? "+ \(mod)" : ""
+        return description
     }
 }
