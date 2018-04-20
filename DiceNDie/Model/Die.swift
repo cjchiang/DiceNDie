@@ -11,13 +11,14 @@ import Darwin
 
 class Die {
     var max : Int
-    
+    var value : Int
     init(max: Int) {
         self.max = max
+        self.value = 0
     }
     
-    func roll() -> Int {
+    func roll() {
         let range = max
-        return Int(arc4random_uniform(UInt32(range))) + 1
+        value =  Int(arc4random_uniform(UInt32(range))) + 1
     }
 }

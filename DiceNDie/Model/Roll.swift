@@ -10,30 +10,24 @@ import Foundation
 
 class Roll {
     var name : String
-    var desc : String
     var dice : [Die] = []
     var mod : Int
     var log : [Int] = []
+    var desc : String
     
-    init(name: String, desc: String, mod: Int) {
+    init(name: String, mod: Int, desc: String) {
         self.name = name
-        self.desc = desc
         self.mod = mod
+        self.desc = desc
     }
     
     func addDice(die : Die) {
         self.dice.append(die)
     }
     
-    func getRoll() -> Int {
-        var total = 0
+    func rollAll(){
         for die in dice {
-            let diceRoll = die.roll()
-            log.append(diceRoll)
-            total += diceRoll
+            die.roll()
         }
-        log.append(mod)
-        return total + mod
     }
-    
 }

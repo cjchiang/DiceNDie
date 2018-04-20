@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		256E41E4208970270020B287 /* CreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 256E41E3208970270020B287 /* CreationViewController.swift */; };
 		72CFE74C2088075600D33459 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CFE74B2088075600D33459 /* AppDelegate.swift */; };
 		72CFE74E2088075600D33459 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CFE74D2088075600D33459 /* ViewController.swift */; };
 		72CFE7512088075600D33459 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72CFE74F2088075600D33459 /* Main.storyboard */; };
@@ -17,7 +18,6 @@
 		72CFE76F2088075600D33459 /* DiceNDieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CFE76E2088075600D33459 /* DiceNDieUITests.swift */; };
 		72CFE77E208807CB00D33459 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CFE77C208807CB00D33459 /* Cell.swift */; };
 		72CFE77F208807CB00D33459 /* Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72CFE77D208807CB00D33459 /* Cell.xib */; };
-		72CFE7812088113100D33459 /* RollCreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CFE7802088113100D33459 /* RollCreationViewController.swift */; };
 		72CFE7842088176200D33459 /* Die.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CFE7832088176200D33459 /* Die.swift */; };
 		72CFE786208819FC00D33459 /* Roll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CFE785208819FC00D33459 /* Roll.swift */; };
 /* End PBXBuildFile section */
@@ -40,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		256E41E3208970270020B287 /* CreationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreationViewController.swift; sourceTree = "<group>"; };
 		72CFE7482088075600D33459 /* DiceNDie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiceNDie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72CFE74B2088075600D33459 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72CFE74D2088075600D33459 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,7 +57,6 @@
 		72CFE7702088075600D33459 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72CFE77C208807CB00D33459 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		72CFE77D208807CB00D33459 /* Cell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Cell.xib; sourceTree = "<group>"; };
-		72CFE7802088113100D33459 /* RollCreationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollCreationViewController.swift; sourceTree = "<group>"; };
 		72CFE7832088176200D33459 /* Die.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Die.swift; sourceTree = "<group>"; };
 		72CFE785208819FC00D33459 /* Roll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Roll.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,6 +111,7 @@
 			children = (
 				72CFE782208816C800D33459 /* Model */,
 				72CFE74B2088075600D33459 /* AppDelegate.swift */,
+				256E41E3208970270020B287 /* CreationViewController.swift */,
 				72CFE74D2088075600D33459 /* ViewController.swift */,
 				72CFE74F2088075600D33459 /* Main.storyboard */,
 				72CFE7552088075600D33459 /* Assets.xcassets */,
@@ -119,7 +120,6 @@
 				72CFE7522088075600D33459 /* DiceNDie.xcdatamodeld */,
 				72CFE77C208807CB00D33459 /* Cell.swift */,
 				72CFE77D208807CB00D33459 /* Cell.xib */,
-				72CFE7802088113100D33459 /* RollCreationViewController.swift */,
 			);
 			path = DiceNDie;
 			sourceTree = "<group>";
@@ -288,11 +288,11 @@
 			files = (
 				72CFE74E2088075600D33459 /* ViewController.swift in Sources */,
 				72CFE786208819FC00D33459 /* Roll.swift in Sources */,
-				72CFE7812088113100D33459 /* RollCreationViewController.swift in Sources */,
 				72CFE77E208807CB00D33459 /* Cell.swift in Sources */,
 				72CFE74C2088075600D33459 /* AppDelegate.swift in Sources */,
 				72CFE7842088176200D33459 /* Die.swift in Sources */,
 				72CFE7542088075600D33459 /* DiceNDie.xcdatamodeld in Sources */,
+				256E41E4208970270020B287 /* CreationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
